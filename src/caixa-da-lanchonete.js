@@ -1,14 +1,22 @@
 class CaixaDaLanchonete {
+    
+    //pensei em fazer uma lista de nodos com os itens do cardápio
+    //porém eu não sei fazer listas em JavaScript e também não 
+    //estou conseguindo declarar as variáveis
+
+    
+
 
     calcularValorDaCompra(metodoDePagamento, itens) {
         valorTotal = 0;
         //itens
-        
-
-
-
-
-
+        itens.forEach(element => {
+            if(element.includes(searchString["0"])){
+                return"Quantidade inválida!";
+            }else if(element == null){
+                return "Não há itens no carrinho de compra!";
+            }
+        });
 
 
 
@@ -25,6 +33,8 @@ class CaixaDaLanchonete {
 
         return "";
     }
+
+
 
 
 
